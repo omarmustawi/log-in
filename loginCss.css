@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("./image/istockphoto-873620504-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    font-family: sans-serif;
+    font-size: large;
+    object-fit: cover;
+}
+
+.user {
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: calc(-100px/2);
+    left: calc(50% - 50px );
+
+}
+.loginBox{
+    border-radius: 61px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    max-height: 800px;
+    width: 60%;
+    height: 75%;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+}
+
+h2{
+    justify-content: center;
+    color: #efed40;
+    display: flex;
+}
+form {
+    color: #fff;
+    width: 75%;
+    margin: auto;
+}
+form p{
+    margin: 32px 0 7px;
+}
+#submit {
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(169 124 80 / 63%);
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+/* rgb(90, 10, 10); */
+/* #efed40; */
+#email ,
+#password {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+::placeholder{
+    color: rgba(255,255,255,.5);
+}
+submit:hover{
+    background-color: #efed40;
+    color: #262626;
+}
+.loginBox a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
